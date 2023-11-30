@@ -1,0 +1,78 @@
+/* FavoriteCities.css */
+
+.favorite-main {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f8ff; /* Light sky blue background */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333; /* Dark text color */
+}
+
+.add-city-form {
+  margin-bottom: 20px;
+  display: flex; /* Align input and button horizontally */
+  align-items: center; /* Vertically center input and button */
+}
+
+.input-field {
+  flex-grow: 1; /* Expand input to fill available space */
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.add-button {
+  background-color: #007bff; /* Primary blue color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.add-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.alert {
+  background-color: #f0f8ff;
+  color: #333; /* Dark text color */
+}
+
+.city-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #f0f8ff; /* Light sky blue background */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333; /* Dark text color */
+}
+
+.card-body {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #555; /* Medium text color */
+}
