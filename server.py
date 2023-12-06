@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Configure the MongoDB connection
-app.config['MONGO_URI'] = os.environ.get('MONGODB_URI') or "mongodb+srv://WeatherApp:WeatherApp@cluster0.n4ttupx.mongodb.net/?retryWrites=true&w=majority"
+app.config['MONGO_URI'] = os.environ.get('MONGODB_URI')
 mongo = PyMongo()
 
 

@@ -16,7 +16,7 @@ const WeatherSearch = () => {
     e.preventDefault();
 
     try {
-      const apiKey = '6c39b74035a3fa2b64c509d85e542bf0';
+      const apiKey = os.environ.get('REACT_APP_OPENWEATHERMAP_API_KEY');
       const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
 
       const response = await axios.get(apiUrl);
