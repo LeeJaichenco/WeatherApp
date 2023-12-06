@@ -83,8 +83,6 @@ With both keys added, your Weather App is ready to use!
 
 ---
 
-This section guides users through the process of obtaining and adding both the OpenWeatherMap API key and the MongoDB connection URL. Adjust the instructions based on your specific setup and preferences.
-
 ## Screenshots
 
 ![Screenshot 1](/screenshots/screenshot1.png)
