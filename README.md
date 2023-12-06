@@ -1,63 +1,99 @@
-# WeatherApp
-Weather App
-Overview
+# Weather App
+
+## Overview
+
 This Weather App is a web application that allows users to check the current weather and the 5-day forecast for their favorite cities. Users can add and remove cities to/from their favorites list for quick access.
 
-Features
-Current Weather: Get real-time information about the temperature, description, humidity, and wind speed for a specific city.
+## Features
 
-5-Day Forecast: Check the upcoming weather forecast for the next 5 days, including temperature, description, and other relevant details.
+- **Current Weather:** Get real-time information about the temperature, description, humidity, and wind speed for a specific city.
 
-Favorite Cities: Save your favorite cities to the list for quick access to their weather information.
+- **5-Day Forecast:** Check the upcoming weather forecast for the next 5 days, including temperature, description, and other relevant details.
 
-Technologies Used
-Frontend: React
-Backend: Flask (Python)
-Database: MongoDB
-How to Use
-Clone the Repository:
+- **Favorite Cities:** Save your favorite cities to the list for quick access to their weather information.
 
-bash
-Copy code
-git clone https://github.com/your-username/weather-app.git
-cd weather-app
-Install Dependencies:
+## Technologies Used
 
-bash
-Copy code
-# Frontend (React)
-cd frontend
-npm install
+- **Frontend:** React
+- **Backend:** Flask (Python)
+- **Database:** MongoDB
 
-# Backend (Flask)
-cd backend
-pip install -r requirements.txt
-Start the Application:
+## How to Use
 
-bash
-Copy code
-# Frontend (React)
-cd frontend
-npm start
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/weather-app.git
+   cd weather-app
+   ```
 
-# Backend (Flask)
-cd backend
-flask run
-Open in Browser:
-Open your browser and navigate to http://localhost:3000 to use the Weather App.
+2. **Install Dependencies:**
+   ```bash
+   # Frontend (React)
+   cd frontend
+   npm install
 
-Adding Your API Key
-To fetch weather data, you need to obtain an API key from OpenWeatherMap and replace the placeholder in the backend's .env file.
+   # Backend (Flask)
+   cd backend
+   pip install -r requirements.txt
+   ```
 
-Screenshots
-Screenshot 1
-Add a description here.
+3. **Start the Application:**
+   ```bash
+   # Frontend (React)
+   cd frontend
+   npm start
 
-Screenshot 2
-Add a description here.
+   # Backend (Flask)
+   cd backend
+   flask run
+   ```
 
-Acknowledgments
-This Weather App was created as a project for learning React, Flask, and MongoDB.
-Weather data is powered by OpenWeatherMap.
-License
-This project is licensed under the MIT License.
+4. **Open in Browser:**
+   Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to use the Weather App.
+
+## Adding Your API Key and MongoDB URL
+
+### OpenWeatherMap API Key
+
+To fetch weather data, you need to obtain an API key from [OpenWeatherMap](https://openweathermap.org/api). Once you have the key:
+
+1. Navigate to the `backend` folder in the project.
+2. Open the `.env` file.
+3. Replace the placeholder `YOUR_OPENWEATHERMAP_API_KEY` with your actual API key.
+
+```plaintext
+OPENWEATHERMAP_API_KEY=YOUR_OPENWEATHERMAP_API_KEY
+```
+
+### MongoDB URL
+
+To store and retrieve favorite cities, the app uses MongoDB. Follow these steps to set up your MongoDB connection:
+
+1. Create a MongoDB Atlas account or use your existing one.
+2. Create a new cluster and obtain the connection URL.
+3. Navigate to the `backend` folder in the project.
+4. Open the `.env` file.
+5. Replace the placeholder `YOUR_MONGODB_URL` with your actual MongoDB connection URL.
+
+```plaintext
+MONGODB_URL=YOUR_MONGODB_URL
+```
+
+With both keys added, your Weather App is ready to use!
+
+---
+
+This section guides users through the process of obtaining and adding both the OpenWeatherMap API key and the MongoDB connection URL. Adjust the instructions based on your specific setup and preferences.
+
+## Screenshots
+
+![Screenshot 1](/screenshots/screenshot1.png)
+*Add a description here.*
+
+![Screenshot 2](/screenshots/screenshot2.png)
+*Add a description here.*
+
+## Acknowledgments
+
+- This Weather App was created as a project for learning React, Flask, and MongoDB.
+- Weather data is powered by [OpenWeatherMap](https://openweathermap.org/).
